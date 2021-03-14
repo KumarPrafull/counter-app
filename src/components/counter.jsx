@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
 
 class Counter extends Component {
-  state = {
-  };
+
+  componentDidUpdate(prevProps, prevState) {
+    console.log('updated prevProps', prevProps);
+    console.log('updated prevState', prevState);
+  }
+
+  componentWllUnmount() {
+    console.log('component -- unMount');
+
+  }
+
 
   // constructor() {
   //   super();
   //   this.handleIncrement = this.handleIncrement.bind(this);
   // }
-
-
-  
-
 
   render() { 
     console.log('Counter - rendered');

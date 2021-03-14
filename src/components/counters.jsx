@@ -1,19 +1,9 @@
 import React, { Component } from 'react';
 import Counter from './counter';
 
+
+
 class Counters extends Component {
-
-  componentDidUpdate(prevProps, prevState) {
-    console.log('updated prevProps', prevProps);
-    console.log('updated prevState', prevState);
-
-
-  }
-
-  componentWllUnmount() {
-    console.log('component -- unMount');
-
-  }
   
   render() { 
     console.log('Counters - rendered');
